@@ -107,6 +107,6 @@ public class AttractionListActivity extends AppCompatActivity {
         attractions.add(new CanadaAttractions("7","Whistler","VC","Vancouver","British Columbia", whistler_dec ,R.drawable.whistler));
         attractions.add(new CanadaAttractions("8","Grosmorne Park","Rocky Harbour","Newfoundland","Newfoundland", grosmorne_desc ,R.drawable.grosmorne));
         attractions.add(new CanadaAttractions("9","Kluane Reserve","Yukon","Yukon","Yukon", kluane_desc ,R.drawable.kluane));
-        attractions.add(new CanadaAttractions("10","Jasper Park","Montreal","Montreal","Quebec", mont_desc,R.drawable.monttremblant));
+        attractions.add(new CanadaAttractions("10","MontTremblant","Montreal","Montreal","Quebec", mont_desc,R.drawable.monttremblant));
     }
 }
