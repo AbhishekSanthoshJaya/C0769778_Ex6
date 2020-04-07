@@ -18,8 +18,6 @@ import java.util.ArrayList;
 
 public class AttractionsAdapter extends RecyclerView.Adapter<AttractionsAdapter.AttractionsViewHolder> {
 
-
-
     private ArrayList<CanadaAttractions> attractionArrayList;
 
     public AttractionsAdapter(ArrayList<CanadaAttractions> attractionArrayList)
