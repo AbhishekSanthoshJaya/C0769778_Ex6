@@ -1,5 +1,7 @@
 package com.aby.c0769778_ex6.adapters;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,8 +14,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.aby.c0769778_ex6.R;
+import com.aby.c0769778_ex6.activities.AttractionDetailsActivity;
 import com.aby.c0769778_ex6.model.CanadaAttractions;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class AttractionsAdapter extends RecyclerView.Adapter<AttractionsAdapter.AttractionsViewHolder> {
@@ -48,8 +52,13 @@ public class AttractionsAdapter extends RecyclerView.Adapter<AttractionsAdapter.
             public void onClick(View view)
             {
                 CanadaAttractions atr = attractionArrayList.get(position);
-                Toast.makeText(holder.itemView.getContext(), "C : " + atr.getName(), Toast.LENGTH_SHORT).show();
-                Log.d("CLICK", "hello");
+                //Toast.makeText(holder.itemView.getContext(), "C : " + atr.getName(), Toast.LENGTH_SHORT).show();
+
+                Intent attractionIntent = new Intent(holder.itemView.getContext(), AttractionDetailsActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("attractionsKey", atr);
+                attractionIntent.putExtras(bundle);
+                holder.itemView.getContext().startActivity(attractionIntent);
 
                 //Intent mIntent = new Intent(holder.itemView.getContext(), MainActivity.class);
                 //Add Parameter - Parcalble or serializable

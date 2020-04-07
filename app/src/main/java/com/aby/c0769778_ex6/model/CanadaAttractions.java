@@ -1,6 +1,8 @@
 package com.aby.c0769778_ex6.model;
 
-public class CanadaAttractions {
+import java.io.Serializable;
+
+public class CanadaAttractions implements Serializable {
 
     private String id;
     private String name;
