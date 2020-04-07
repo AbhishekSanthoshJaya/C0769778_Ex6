@@ -48,7 +48,7 @@ public class AttractionsAdapter extends RecyclerView.Adapter<AttractionsAdapter.
             public void onClick(View view)
             {
                 CanadaAttractions atr = attractionArrayList.get(position);
-                Toast.makeText(holder.itemView.getContext(), "C : " + atr.getName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(holder.itemView.getContext(), "C : " + atr.getDescription(), Toast.LENGTH_SHORT).show();
                 Log.d("CLICK", "hello");
 
                 //Intent mIntent = new Intent(holder.itemView.getContext(), MainActivity.class);
