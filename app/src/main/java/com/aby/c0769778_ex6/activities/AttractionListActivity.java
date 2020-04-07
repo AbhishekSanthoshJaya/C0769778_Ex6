@@ -98,15 +98,15 @@ public class AttractionListActivity extends AppCompatActivity {
 
          attractions = new ArrayList<>();
 
-        attractions.add(new CanadaAttractions("1","Jasper Park","Canadian Rockies","Alberta","Alberta", jasper_desc,R.drawable.jasper_park));
-        attractions.add(new CanadaAttractions("2","Niagara Falls","The Falls","Ontario","Ontario",niagara_desc,R.drawable.niagarafalls));
-        attractions.add(new CanadaAttractions("3","Banff Park","Canadian Rockies","Alberta","Alberta",banf_desc, R.drawable.banff));
+        attractions.add(new CanadaAttractions("1","Jasper Park","86 Jasper Ave","West Edmonton","Alberta", jasper_desc,R.drawable.jasper_park));
+        attractions.add(new CanadaAttractions("2","Niagara Falls","6650 Niagara Parkway","Niagara Falls","Ontario",niagara_desc,R.drawable.niagarafalls));
+        attractions.add(new CanadaAttractions("3","Banff Park","Improvement District No. 9, AB T0L","Banff","Alberta",banf_desc, R.drawable.banff));
         attractions.add(new CanadaAttractions("4","Victoria Island","Canadian Rockies","Vancouver","British Columbia", victoriaIsland_desc,R.drawable.victoriaandvancouverisland));
-        attractions.add(new CanadaAttractions("5","Edward Park","Cliffs","Alberta","Alberta", edward_desc, R.drawable.princeedwardisland));
-        attractions.add(new CanadaAttractions("6","Quebec City","New France","Quebec","Quebec", quebec_desc ,R.drawable.quebeccity));
-        attractions.add(new CanadaAttractions("7","Whistler","VC","Vancouver","British Columbia", whistler_dec ,R.drawable.whistler));
+        attractions.add(new CanadaAttractions("5","Edward Park","755 Lawrence Ave E","Prince Edward Island","Alberta", edward_desc, R.drawable.princeedwardisland));
+        attractions.add(new CanadaAttractions("6","Quebec City","Saint Lawrence River","Quebec","Quebec", quebec_desc ,R.drawable.quebeccity));
+        attractions.add(new CanadaAttractions("7","Whistler","Village Gate Blvd","Whistler","British Columbia", whistler_dec ,R.drawable.whistler));
         attractions.add(new CanadaAttractions("8","Grosmorne Park","Rocky Harbour","Newfoundland","Newfoundland", grosmorne_desc ,R.drawable.grosmorne));
-        attractions.add(new CanadaAttractions("9","Kluane Reserve","Yukon","Yukon","Yukon", kluane_desc ,R.drawable.kluane));
-        attractions.add(new CanadaAttractions("10","MontTremblant","Montreal","Montreal","Quebec", mont_desc,R.drawable.monttremblant));
+        attractions.add(new CanadaAttractions("9","Kluane Reserve","Unorganized Yukon, YT Y0B 1H0","Dawson","Yukon", kluane_desc ,R.drawable.kluane));
+        attractions.add(new CanadaAttractions("10","Mont Tremblant","Rue Leonard","Montreal","Quebec", mont_desc,R.drawable.monttremblant));
     }
 }

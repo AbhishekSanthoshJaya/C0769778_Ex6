@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,6 +22,7 @@ public class AttractionDetailsActivity extends AppCompatActivity {
     private TextView txtDescription;
     private ImageView imgBtnBack;
     private ImageView imgAttractions;
+    private Button btnHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +38,15 @@ public class AttractionDetailsActivity extends AppCompatActivity {
         txtProvince = findViewById(R.id.txtProvince);
         txtDescription = findViewById(R.id.txtDescription);
         imgAttractions = findViewById(R.id.imgAttraction);
+        btnHome = findViewById(R.id.btnHome);
 
         imgBtnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
